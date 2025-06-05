@@ -23,3 +23,76 @@ The goal of this is to get the odds on your side, and use Math to see how likely
 git clone https://github.com/yourname/monte-carlo-chegg.git
 cd monte-carlo-chegg ```
 
+### Step 2: Install Poetry (if not installed)
+```bash
+pip install poetry```
+
+### Step 3: Create virtual environment and install dependencies
+```bash
+poetry install```
+
+### Step 4: Activate the shell
+```bash
+poetry shell```
+
+### Step 5: Run the simulation
+```bash
+python src/main.py```
+
+Keep in mind you can also just run:
+```poetry run python src/main.py```
+wihtout having a shell and it should work.
+
+## How It Works
+1. Scenario Modeling
+User assigns probabilities to future states of the company:
+['bankruptcy', 'buyout', 'turnaround', 'stagnation']
+
+Valuation ranges (low, mode, high) are defined for each in config.py. This is where you map out
+what you think the stock price would be if the scenario occurred, inputting low, mid, and high estimates.
+
+2. Simulation Engine
+For each iteration:
+
+- A scenario is sampled based on weights
+- A stock price is drawn from a triangular distribution
+- ROI and dollar return are calculated
+
+Each iteration creates and appends a dictionary to a list that we then query for our visualizations.
+
+3. Visualization
+The results are visualized using Seaborn and Matplotlib:
+
+**ROI distribution histogram, color-coded by profitability and scenario**
+![image](https://github.com/user-attachments/assets/d5d6ee0a-5723-4777-a46a-cad8201f139a)
+
+**Scenario frequency vs average dollar gain**
+![image](https://github.com/user-attachments/assets/8f335aaa-2eb4-4140-b621-ef455a87f2a0)
+
+**CDF plot showing cumulative return probabilities**
+![image](https://github.com/user-attachments/assets/382aa205-a9d8-45b2-89d5-61d2df78b93f)
+
+## How to customize this for your investment you are looking at
+This is a framework.
+1. Update `config.py` with new valuations, shares, entry price, etc
+2. Adjust your scenario probabilities in `config.py`
+3. For the "bankruptcy" key in `SCENARIO_PROBABILITIES`, adjust parameters for your business for the `calculate_default_probability` function.
+Check documentation for how to find that.
+4. Run `main.py` for your simulations.
+
+## Potential Enhancements
+
+-Add GUI dashboard with Streamlit or Plotly Dash
+-Model multiple time horizons (1-year, 3-year, 5-year exit)
+-Include boxplots or violin plots for deeper distribution insight
+-Save simulation output to CSV or database for reporting
+-Integrate LLMs for real-time earnings sentiment classification
+-Add CLI interface for parameter overrides
+
+## Author Notes
+
+I hope you find this useful. Happy investing!
+
+
+
+
