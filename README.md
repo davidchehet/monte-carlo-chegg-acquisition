@@ -1,4 +1,4 @@
-# Monte Carlo Simulation: Chegg Inc. Investment Scenarios
+# Monte Carlo Distressed Investing Framework
 
 This project models the potential future outcomes of an investment in **Chegg Inc.** using a robust, scenario-based **Monte Carlo simulation**. It evaluates downside and upside probabilities such as bankruptcy, buyout, turnaround, and stagnation — generating thousands of simulations to quantify risk and return using real-world data like corporate bond yields and business segments.
 
