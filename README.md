@@ -1,5 +1,17 @@
 # Monte Carlo Distressed Investing Framework
 
+## Table of Contents
+
+- [Why This Project Matters](#why-this-project-matters)
+- [Using Poetry to Run The Code](#using-poetry-to-run-the-code)
+- [How It Works](#how-it-works)
+  - [1. Scenario Modeling](#1-scenario-modeling)
+  - [2. Simulation Engine](#2-simulation-engine)
+  - [3. Visualization](#3-visualization)
+- [How to Customize This for Your Investment](#how-to-customize-this-for-your-investment)
+- [Potential Enhancements](#potential-enhancements)
+- [Author Notes](#author-notes)
+
 This project models the potential future outcomes of an investment in **Chegg Inc.** using a robust, scenario-based **Monte Carlo simulation**. It evaluates downside and upside probabilities such as bankruptcy, buyout, turnaround, and stagnation — generating thousands of simulations to quantify risk and return using real-world data like corporate bond yields and business segments.
 
 As someone who enjoys value investing and picking stocks, I came across Chegg as a potential investment. However, this business is in distress and is going through turbulence, which is a type of company I usually want to avoid. I wanted to use Monte Carlo to project what might happen to the company and as a result how much money there is to be made or lost. I made the project in a way so that you can clone it, change the constants in `config.py`, and run this for any distressed business stock.
@@ -104,7 +116,7 @@ This is a reusable framework.
 
 1. Update `config.py` with new valuations, shares, entry price, etc.
 2. Adjust your scenario probabilities in `config.py`.
-3. For the `"bankruptcy"` key in `SCENARIO_PROBABILITIES`, adjust parameters for your business inside the `calculate_default_probability` function.
+3. For the `"bankruptcy"` key in `SCENARIO_PROBABILITIES`, adjust parameters for your business inside the `calculate_default_probability` function. Read the method documentation to learn how to do this for your company.
 4. Run `main.py` to simulate and visualize.
 
 ---
