@@ -1,4 +1,4 @@
-# Monte Carlo Simulation: Chegg Inc. Investment Scenarios
+# Monte Carlo Distressed Investment Framework
 
 This project models the potential future outcomes of an investment in **Chegg Inc.** using a robust, scenario-based **Monte Carlo simulation**. It evaluates downside and upside probabilities such as bankruptcy, buyout, turnaround, and stagnation — generating thousands of simulations to quantify risk and return using real-world data like corporate bond yields and business segments.
 
@@ -118,7 +118,7 @@ This is a reusable framework.
 
 1. Update `config.py` with new valuations, shares, entry price, etc.
 2. Adjust your scenario probabilities in `config.py`.
-3. For the `"bankruptcy"` key in `SCENARIO_PROBABILITIES`, adjust parameters for your business inside the `calculate_default_probability` function.
+3. For the `"bankruptcy"` key in `SCENARIO_PROBABILITIES`, adjust parameters for your business inside the `calculate_default_probability` function. Look at the function documentation for details on how to implement it for your business.
 4. Run `main.py` to simulate and visualize.
 
 ---
