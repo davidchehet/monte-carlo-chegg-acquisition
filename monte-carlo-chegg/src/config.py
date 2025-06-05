@@ -18,7 +18,7 @@ Scenario Labels for Chegg:
 Now that we have labels, we need probabilities for what I think will happen.
 This requires human intutiton.
 
-1. Bankruptcy: 0.23 based on latest data(see utils.py/calculate_default_probability)
+1. Bankruptcy: 0.23 based on latest data(see financials.py/calculate_default_probability)
 
 2. Buyout: 0.27 based on strategic review with Goldman, dozens of active conversations with buyers,
 asset values of businesses like Busuu, Skills, Study, etc, licensing with big tech/AI training
