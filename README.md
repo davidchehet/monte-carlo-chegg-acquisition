@@ -24,7 +24,7 @@ The goal of this is to get the odds on your side, and use Math to see how likely
 ### Step 1: Clone the project
 
 ```bash
-git clone https://github.com/yourname/monte-carlo-chegg.git
+git clone https://github.com/davidchehet/monte-carlo-chegg-acquisition.git
 cd monte-carlo-chegg 
 ```
 
