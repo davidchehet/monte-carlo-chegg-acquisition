@@ -21,7 +21,7 @@ The goal of this is to get the odds on your side, and use Math to see how likely
 ### Step 1: Clone the project
 ```bash
 git clone https://github.com/yourname/monte-carlo-chegg.git
-cd monte-carlo-chegg ```
+cd monte-carlo-chegg 
 
 ### Step 2: Install Poetry (if not installed)
 ```bash
