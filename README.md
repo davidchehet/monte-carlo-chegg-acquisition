@@ -100,6 +100,10 @@ Each iteration creates and appends a dictionary to a list that we then query for
 ### 3. Visualization
 
 The results are visualized using **Seaborn** and **Matplotlib**:
+## Key Points:
+Graphs reflect the following constant values:
+- ENTRY_PRICE: 1.30
+- SHARE_COUNT: 3050
 
 **ROI distribution histogram, color-coded by profitability and scenario**  
 ![ROI Distribution](https://github.com/user-attachments/assets/d5d6ee0a-5723-4777-a46a-cad8201f139a)
