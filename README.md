@@ -81,7 +81,7 @@ poetry run python src/main.py
 User assigns probabilities to future states of the company:
 `['bankruptcy', 'buyout', 'turnaround', 'stagnation']`
 
-Valuation ranges (`low`, `mode`, `high`) are defined for each in `config.py`. This is where you map out what you think the stock price would be if the scenario occurred, inputting low, mid, and high estimates.
+Valuation ranges (`low`, `mid`, `high`) are defined for each in `config.py`. This is where you map out what you think the stock price would be if the scenario occurred, inputting low, mid, and high estimates.
 
 ---
 
@@ -142,4 +142,5 @@ This is a reusable framework.
 
 I hope you find this project useful — whether you're investing, modeling, or just learning how to bring probabilities into decision-making.  
 Happy investing!
+
 
