@@ -38,8 +38,8 @@ The goal of this is to get the odds on your side, and use Math to see how likely
 ### Step 1: Clone the project
 
 ```bash
-git clone https://github.com/yourname/monte-carlo-chegg.git
-cd monte-carlo-chegg 
+git clone https://github.com/davidchehet/monte-carlo-chegg-acquisition.git
+cd monte-carlo-chegg-acquisition
 ```
 
 ### Step 2: Install Poetry (if not installed)
@@ -142,3 +142,4 @@ This is a reusable framework.
 
 I hope you find this project useful — whether you're investing, modeling, or just learning how to bring probabilities into decision-making.  
 Happy investing!
+
