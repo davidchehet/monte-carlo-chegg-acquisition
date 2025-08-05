@@ -122,7 +122,7 @@ This is a reusable framework.
 
 1. Update `config.py` with new valuations, shares, entry price, etc.
 2. Adjust your scenario probabilities in `config.py`.
-3. For the `"bankruptcy"` key in `SCENARIO_PROBABILITIES`, adjust parameters for your business inside the `calculate_default_probability` function. Look at the function documentation for details on how to implement it for your business.
+3. For the `"bankruptcy"` key in `SCENARIO_PROBABILITIES`, adjust parameters for your business inside the `calculate_default_probability` function stored in `financials.py`. Look at the function documentation for details on how to implement it for your business.
 4. Run `main.py` to simulate and visualize.
 
 ---
@@ -142,5 +142,6 @@ This is a reusable framework.
 
 I hope you find this project useful — whether you're investing, modeling, or just learning how to bring probabilities into decision-making.  
 Happy investing!
+
 
 
