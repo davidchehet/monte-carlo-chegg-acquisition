@@ -1,39 +1,16 @@
-# Monte Carlo Distressed Investment Framework
+# Monte Carlo Investing Framework
 
-This project models the potential future outcomes of an investment in **Chegg Inc.** using a robust, scenario-based **Monte Carlo simulation**. It evaluates downside and upside probabilities such as bankruptcy, buyout, turnaround, and stagnation — generating thousands of simulations to quantify risk and return using real-world data like corporate bond yields and business segments.
+## Description
 
-As someone who enjoys value investing and picking stocks, I came across Chegg as a potential investment. However, this business is in distress and is going through turbulence, which is a type of company I usually want to avoid. I wanted to use Monte Carlo to project what might happen to the company and as a result how much money there is to be made or lost. I made the project in a way so that you can clone it, change the constants in `config.py`, and run this for any distressed business stock.
+This project is a framework for using Monte Carlo simulations to analyze how often you will make money investing in a near-bankrupt public business. Investors/coders need to take into account how likely they think the business goes broke, turnsaround, is acquired, or stagnates. However, after that user input, the software runs 100,000 simulations and outputs potential returns on investment and how often those returns occur.
 
----
+## Motivation for this project
 
-## Table of Contents
-
-- [Why This Project Matters](#why-this-project-matters)
-- [Using Poetry to Run The Code](#using-poetry-to-run-the-code)
-- [How It Works](#how-it-works)
-  - [1. Scenario Modeling](#1-scenario-modeling)
-  - [2. Simulation Engine](#2-simulation-engine)
-  - [3. Visualization](#3-visualization)
-- [How to Customize This for Your Investment](#how-to-customize-this-for-your-investment)
-- [Potential Enhancements](#potential-enhancements)
-- [Author Notes](#author-notes)
+I am basically obsessed with the financial markets, specifically buying stock in indvidual companies I believe have the ability to outperform. Thus far I have achieved above average performance, however most of my success came form intuition and I wish to systematize parts of my approach. As such, I became invested 1 year ago in a highly distressed business known as **Chegg Inc($CHGG)**. Given the distessed nature of the business, I decided I needed more than just my intuition to be comfortable allocating capital. I wanted to use Monte Carlo to project what might happen to the company and as a result how much money there is to be made or lost. I made the project in a way so that you can clone it, change the constants in `config.py`, and run this for any distressed business stock.
 
 ---
 
-## Why This Project Matters
-
-In a volatile investing environment, probabilistic thinking can offer superior insight to static valuation models. This simulation combines:
-
-- **Market-driven financial signals** (bond yield spreads)
-- **Scenario-weighted distributions** (triangular forecasting)
-- **Investor-centered metrics** (ROI %, dollar gain, cumulative return)
-- **High-quality visualizations** worthy of financial dashboards
-
-The goal of this is to get the odds on your side, and use Math to see how likely you are to profit from investing in a distressed, riskier stock.
-
----
-
-## Using Poetry to Run The Code
+## Setup and Installation
 
 ### Step 1: Clone the project
 
@@ -72,7 +49,60 @@ Or run it without entering a shell:
 poetry run python src/main.py
 ```
 
+## Contributing
+
+### Clone the repo
+```bash
+git clone https://github.com/davidchehet/monte-carlo-chegg-acquisition
+cd monte-carlo-chegg-acquisition
+```
+
+### Install Dependencies
+ ```bash
+ poetry install
+ ```
+
+### Submit a pull request
+If you'd like to contribute, please fork the repository and open a pull request to the `main` branch.
+
+## How to Customize This for Your Investment
+
+This is a reusable framework.
+
+1. Update `config.py` with new valuations, shares, entry price, etc.
+2. Adjust your scenario probabilities in `config.py`.
+3. For the `"bankruptcy"` key in `SCENARIO_PROBABILITIES`, adjust parameters for your business inside the `calculate_default_probability` function stored in `financials.py`. Look at the function documentation for details on how to implement it for your business.
+4. Run `main.py` to simulate and visualize.
+
 ---
+
+## Table of Contents
+
+- [Why This Project Matters](#why-this-project-matters)
+- [Using Poetry to Run The Code](#using-poetry-to-run-the-code)
+- [How It Works](#how-it-works)
+  - [1. Scenario Modeling](#1-scenario-modeling)
+  - [2. Simulation Engine](#2-simulation-engine)
+  - [3. Visualization](#3-visualization)
+- [How to Customize This for Your Investment](#how-to-customize-this-for-your-investment)
+- [Potential Enhancements](#potential-enhancements)
+- [Author Notes](#author-notes)
+
+---
+
+## Why This Project Matters
+
+In a volatile investing environment, probabilistic thinking can offer superior insight to static valuation models. This simulation combines:
+
+- **Market-driven financial signals** (bond yield spreads)
+- **Scenario-weighted distributions** (triangular forecasting)
+- **Investor-centered metrics** (ROI %, dollar gain, cumulative return)
+- **High-quality visualizations** worthy of financial dashboards
+
+The goal of this is to get the odds on your side, and use Math to see how likely you are to profit from investing in a distressed, riskier stock.
+
+---
+
 
 ## How It Works
 
@@ -116,17 +146,6 @@ Graphs reflect the following constant values:
 
 ---
 
-## How to Customize This for Your Investment
-
-This is a reusable framework.
-
-1. Update `config.py` with new valuations, shares, entry price, etc.
-2. Adjust your scenario probabilities in `config.py`.
-3. For the `"bankruptcy"` key in `SCENARIO_PROBABILITIES`, adjust parameters for your business inside the `calculate_default_probability` function stored in `financials.py`. Look at the function documentation for details on how to implement it for your business.
-4. Run `main.py` to simulate and visualize.
-
----
-
 ## Potential Enhancements
 
 - Add GUI dashboard with Streamlit or Plotly Dash  
@@ -142,6 +161,7 @@ This is a reusable framework.
 
 I hope you find this project useful — whether you're investing, modeling, or just learning how to bring probabilities into decision-making.  
 Happy investing!
+
 
 
 
