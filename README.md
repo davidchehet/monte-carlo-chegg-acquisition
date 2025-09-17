@@ -6,7 +6,7 @@ This project is a framework for using Monte Carlo simulations to analyze how oft
 
 ## Motivation for this project
 
-I am basically obsessed with the financial markets, specifically buying stock in indvidual companies I believe have the ability to outperform. Thus far I have achieved above average performance, however most of my success came from intuition and I wish to systematize parts of my approach. I invested 1 year ago into a highly distressed business known as **Chegg Inc($CHGG)**. Given the distessed nature of the business, I decided I needed more than just my intuition to be comfortable allocating capital. I wanted to use Monte Carlo simulations to project what might happen to the company and as a result how much money there is to be made or lost. I made the project in a way so that you can clone it, change the constants in `config.py`, and run this for any distressed business stock.
+I am basically obsessed with the financial markets, specifically buying stock in individual companies I believe have the ability to outperform. Thus far I have achieved above average performance, however most of my success came from intuition and I wish to systematize parts of my approach. I invested 1 year ago into a highly distressed business known as **Chegg Inc($CHGG)**. Given the distessed nature of the business, I decided I needed more than just my intuition to be comfortable allocating capital. I wanted to use Monte Carlo simulations to project what might happen to the company and as a result how much money there is to be made or lost. I made the project in a way so that you can clone it, change the constants in `config.py`, and run this for any distressed business stock.
 
 ---
 
@@ -161,6 +161,7 @@ Graphs reflect the following constant values:
 
 I hope you find this project useful — whether you're investing, modeling, or just learning how to bring probabilities into decision-making.  
 Happy investing!
+
 
 
 
